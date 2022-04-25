@@ -1,0 +1,254 @@
+/*GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NAVEGAÇÃO*/
+
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131352;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size:12px;
+}
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 2px;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Change the link color on hover */
+a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/*CABEÇALHO*/
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(blue, purple,red);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #cccc;
+}
+header h1{
+    color:#ffff;
+}
+header p{
+    margin-bottom: 2em;
+}
+
+/*CORPO DO TEXTO*/
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    color: #1c1c1c;
+}
+
+/*SUB TÍTULOS*/
+
+h1, h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: #1c1c3b
+}
+
+
+/*BOTOES*/
+
+.button{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #15155b;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*SOBRE*/
+
+#about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970;
+    color: #fff;
+}
+#about h2{
+    color: #fff;
+}
+#about p{
+
+    margin-bottom: 2.5em;
+    max-width:1000px
+}
+
+/*BOTÃO SOBRE*/
+
+#about button{
+    background-color: #313183;
+    color:  #f1f1f1;
+} 
+
+/*SERVIÇOS*/
+
+#service{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #191970;
+    color: #fff;
+}
+
+#service div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*FOTOS*/
+
+#pics{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#pics h2{
+    margin-bottom: 20px;
+
+}
+#pics img{
+    width:100%;
+}
+
+/*CONTATOS*/
+
+#contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#contact h2{
+    color: #000;
+}
+
+/*RODAPÉ*/
+
+footer{
+    flex-wrap: nowrap;
+    text-align: center;
+    padding:10px auto;
+    background-color:#191970;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00ffff;
+}
+
+/*Media @ screen */
+
+@media screen and (min-width: 768px){
+    /**nav*/
+    nav{
+        flex-direction: row;
+        width:100%;
+    }
+
+    /*cabeçalho*/
+    header{
+        height:200px;
+        height:200vh;
+        justify-content: center;
+    }
+
+    /*sobre*/
+    #about{
+        height:250px;
+        height:30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*serviços*/
+    #service{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin:0 auto;
+    }
+    #service h2{
+        text-align: center;
+        width: 100%;
+    }
+    #service div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    /*pics*/
+    #pics{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #pics h2{
+        width:100%;
+        text-align: center;
+    }
+    #pics img{
+        width: 33.333333%;
+    }
+    /* contact*/
+    #contact{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contact h2, #contact p{
+        width:100%;
+    }
+
+
+}
+
+
